@@ -11,7 +11,7 @@ class SigninCest
         $I->fillField('username', 'admin');
         $I->fillField('password', 'admin');
         $I->click('login');
-        $I->see('Welcome to the dash board');
+        $I->see('Welcome to the Dashboard!');
     }
     
     public function shouldNotSignInWithInvalidCredentials(AcceptanceTester $I)
